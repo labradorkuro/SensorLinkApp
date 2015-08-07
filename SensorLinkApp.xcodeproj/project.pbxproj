@@ -13,6 +13,14 @@
 		1E95CE761B749926009C547A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E95CE751B749926009C547A /* Images.xcassets */; };
 		1E95CE791B749926009C547A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E95CE771B749926009C547A /* LaunchScreen.xib */; };
 		1E95CE851B749926009C547A /* SensorLinkAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E95CE841B749926009C547A /* SensorLinkAppTests.swift */; };
+		1E95CE981B7499EE009C547A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E95CE971B7499EE009C547A /* InterfaceController.swift */; };
+		1E95CE9A1B7499EE009C547A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E95CE991B7499EE009C547A /* NotificationController.swift */; };
+		1E95CE9C1B7499EE009C547A /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E95CE9B1B7499EE009C547A /* GlanceController.swift */; };
+		1E95CE9E1B7499EE009C547A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E95CE9D1B7499EE009C547A /* Images.xcassets */; };
+		1E95CEA21B7499EE009C547A /* SensorLinkApp WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 1E95CEA11B7499EE009C547A /* SensorLinkApp WatchKit App.app */; };
+		1E95CEAA1B7499EE009C547A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E95CEA81B7499EE009C547A /* Interface.storyboard */; };
+		1E95CEAC1B7499EE009C547A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E95CEAB1B7499EE009C547A /* Images.xcassets */; };
+		1E95CEAF1B7499EE009C547A /* SensorLinkApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1E95CE921B7499ED009C547A /* SensorLinkApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +31,35 @@
 			remoteGlobalIDString = 1E95CE681B749926009C547A;
 			remoteInfo = SensorLinkApp;
 		};
+		1E95CEA31B7499EE009C547A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E95CE611B749926009C547A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E95CEA01B7499EE009C547A;
+			remoteInfo = "SensorLinkApp WatchKit App";
+		};
+		1E95CEAD1B7499EE009C547A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E95CE611B749926009C547A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E95CE911B7499ED009C547A;
+			remoteInfo = "SensorLinkApp WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1E95CEB61B7499EE009C547A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1E95CEAF1B7499EE009C547A /* SensorLinkApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1E95CE691B749926009C547A /* SensorLinkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SensorLinkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +72,17 @@
 		1E95CE7E1B749926009C547A /* SensorLinkAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SensorLinkAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E95CE831B749926009C547A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E95CE841B749926009C547A /* SensorLinkAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorLinkAppTests.swift; sourceTree = "<group>"; };
+		1E95CE921B7499ED009C547A /* SensorLinkApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SensorLinkApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E95CE951B7499ED009C547A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E95CE961B7499ED009C547A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		1E95CE971B7499EE009C547A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		1E95CE991B7499EE009C547A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		1E95CE9B1B7499EE009C547A /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		1E95CE9D1B7499EE009C547A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1E95CEA11B7499EE009C547A /* SensorLinkApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SensorLinkApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E95CEA71B7499EE009C547A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E95CEA91B7499EE009C547A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1E95CEAB1B7499EE009C547A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +100,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1E95CE8F1B7499ED009C547A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +115,8 @@
 			children = (
 				1E95CE6B1B749926009C547A /* SensorLinkApp */,
 				1E95CE811B749926009C547A /* SensorLinkAppTests */,
+				1E95CE931B7499ED009C547A /* SensorLinkApp WatchKit Extension */,
+				1E95CEA51B7499EE009C547A /* SensorLinkApp WatchKit App */,
 				1E95CE6A1B749926009C547A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +126,8 @@
 			children = (
 				1E95CE691B749926009C547A /* SensorLinkApp.app */,
 				1E95CE7E1B749926009C547A /* SensorLinkAppTests.xctest */,
+				1E95CE921B7499ED009C547A /* SensorLinkApp WatchKit Extension.appex */,
+				1E95CEA11B7499EE009C547A /* SensorLinkApp WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +170,45 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1E95CE931B7499ED009C547A /* SensorLinkApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1E95CE971B7499EE009C547A /* InterfaceController.swift */,
+				1E95CE991B7499EE009C547A /* NotificationController.swift */,
+				1E95CE9B1B7499EE009C547A /* GlanceController.swift */,
+				1E95CE9D1B7499EE009C547A /* Images.xcassets */,
+				1E95CE941B7499ED009C547A /* Supporting Files */,
+			);
+			path = "SensorLinkApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		1E95CE941B7499ED009C547A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E95CE951B7499ED009C547A /* Info.plist */,
+				1E95CE961B7499ED009C547A /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1E95CEA51B7499EE009C547A /* SensorLinkApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				1E95CEA81B7499EE009C547A /* Interface.storyboard */,
+				1E95CEAB1B7499EE009C547A /* Images.xcassets */,
+				1E95CEA61B7499EE009C547A /* Supporting Files */,
+			);
+			path = "SensorLinkApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		1E95CEA61B7499EE009C547A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E95CEA71B7499EE009C547A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +219,12 @@
 				1E95CE651B749926009C547A /* Sources */,
 				1E95CE661B749926009C547A /* Frameworks */,
 				1E95CE671B749926009C547A /* Resources */,
+				1E95CEB61B7499EE009C547A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1E95CEAE1B7499EE009C547A /* PBXTargetDependency */,
 			);
 			name = SensorLinkApp;
 			productName = SensorLinkApp;
@@ -150,6 +249,39 @@
 			productReference = 1E95CE7E1B749926009C547A /* SensorLinkAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		1E95CE911B7499ED009C547A /* SensorLinkApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E95CEB31B7499EE009C547A /* Build configuration list for PBXNativeTarget "SensorLinkApp WatchKit Extension" */;
+			buildPhases = (
+				1E95CE8E1B7499ED009C547A /* Sources */,
+				1E95CE8F1B7499ED009C547A /* Frameworks */,
+				1E95CE901B7499ED009C547A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E95CEA41B7499EE009C547A /* PBXTargetDependency */,
+			);
+			name = "SensorLinkApp WatchKit Extension";
+			productName = "SensorLinkApp WatchKit Extension";
+			productReference = 1E95CE921B7499ED009C547A /* SensorLinkApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		1E95CEA01B7499EE009C547A /* SensorLinkApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E95CEB01B7499EE009C547A /* Build configuration list for PBXNativeTarget "SensorLinkApp WatchKit App" */;
+			buildPhases = (
+				1E95CE9F1B7499EE009C547A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SensorLinkApp WatchKit App";
+			productName = "SensorLinkApp WatchKit App";
+			productReference = 1E95CEA11B7499EE009C547A /* SensorLinkApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +297,12 @@
 					1E95CE7D1B749926009C547A = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = 1E95CE681B749926009C547A;
+					};
+					1E95CE911B7499ED009C547A = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					1E95CEA01B7499EE009C547A = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -183,6 +321,8 @@
 			targets = (
 				1E95CE681B749926009C547A /* SensorLinkApp */,
 				1E95CE7D1B749926009C547A /* SensorLinkAppTests */,
+				1E95CE911B7499ED009C547A /* SensorLinkApp WatchKit Extension */,
+				1E95CEA01B7499EE009C547A /* SensorLinkApp WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +342,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E95CE901B7499ED009C547A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E95CEA21B7499EE009C547A /* SensorLinkApp WatchKit App.app in Resources */,
+				1E95CE9E1B7499EE009C547A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E95CE9F1B7499EE009C547A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E95CEAA1B7499EE009C547A /* Interface.storyboard in Resources */,
+				1E95CEAC1B7499EE009C547A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +383,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1E95CE8E1B7499ED009C547A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E95CE9A1B7499EE009C547A /* NotificationController.swift in Sources */,
+				1E95CE981B7499EE009C547A /* InterfaceController.swift in Sources */,
+				1E95CE9C1B7499EE009C547A /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +400,16 @@
 			isa = PBXTargetDependency;
 			target = 1E95CE681B749926009C547A /* SensorLinkApp */;
 			targetProxy = 1E95CE7F1B749926009C547A /* PBXContainerItemProxy */;
+		};
+		1E95CEA41B7499EE009C547A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E95CEA01B7499EE009C547A /* SensorLinkApp WatchKit App */;
+			targetProxy = 1E95CEA31B7499EE009C547A /* PBXContainerItemProxy */;
+		};
+		1E95CEAE1B7499EE009C547A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E95CE911B7499ED009C547A /* SensorLinkApp WatchKit Extension */;
+			targetProxy = 1E95CEAD1B7499EE009C547A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +428,14 @@
 				1E95CE781B749926009C547A /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		1E95CEA81B7499EE009C547A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E95CEA91B7499EE009C547A /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -392,6 +578,62 @@
 			};
 			name = Release;
 		};
+		1E95CEB11B7499EE009C547A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = SensorLinkApp_WatchKit_Extension;
+				INFOPLIST_FILE = "SensorLinkApp WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		1E95CEB21B7499EE009C547A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = SensorLinkApp_WatchKit_Extension;
+				INFOPLIST_FILE = "SensorLinkApp WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		1E95CEB41B7499EE009C547A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SensorLinkApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1E95CEB51B7499EE009C547A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SensorLinkApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -417,6 +659,22 @@
 			buildConfigurations = (
 				1E95CE8C1B749926009C547A /* Debug */,
 				1E95CE8D1B749926009C547A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1E95CEB01B7499EE009C547A /* Build configuration list for PBXNativeTarget "SensorLinkApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E95CEB11B7499EE009C547A /* Debug */,
+				1E95CEB21B7499EE009C547A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1E95CEB31B7499EE009C547A /* Build configuration list for PBXNativeTarget "SensorLinkApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E95CEB41B7499EE009C547A /* Debug */,
+				1E95CEB51B7499EE009C547A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
