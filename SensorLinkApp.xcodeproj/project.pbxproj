@@ -62,6 +62,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1E92E7E01B87355B000903A4 /* SensorLinkApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SensorLinkApp.entitlements; sourceTree = "<group>"; };
+		1E92E7E11B8735E1000903A4 /* SensorLinkApp WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "SensorLinkApp WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		1E95CE691B749926009C547A /* SensorLinkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SensorLinkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E95CE6D1B749926009C547A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E95CE6E1B749926009C547A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		1E95CE6B1B749926009C547A /* SensorLinkApp */ = {
 			isa = PBXGroup;
 			children = (
+				1E92E7E01B87355B000903A4 /* SensorLinkApp.entitlements */,
 				1E95CE6E1B749926009C547A /* AppDelegate.swift */,
 				1E95CE701B749926009C547A /* ViewController.swift */,
 				1E95CE721B749926009C547A /* Main.storyboard */,
@@ -173,6 +176,7 @@
 		1E95CE931B7499ED009C547A /* SensorLinkApp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				1E92E7E11B8735E1000903A4 /* SensorLinkApp WatchKit Extension.entitlements */,
 				1E95CE971B7499EE009C547A /* InterfaceController.swift */,
 				1E95CE991B7499EE009C547A /* NotificationController.swift */,
 				1E95CE9B1B7499EE009C547A /* GlanceController.swift */,
@@ -288,11 +292,19 @@
 		1E95CE611B749926009C547A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = TanakaTakenori;
 				TargetAttributes = {
 					1E95CE681B749926009C547A = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = BP8S75KQXU;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					1E95CE7D1B749926009C547A = {
 						CreatedOnToolsVersion = 6.4;
@@ -300,6 +312,12 @@
 					};
 					1E95CE911B7499ED009C547A = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = BP8S75KQXU;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					1E95CEA01B7499EE009C547A = {
 						CreatedOnToolsVersion = 6.4;
@@ -528,9 +546,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SensorLinkApp/SensorLinkApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SensorLinkApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -538,9 +560,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SensorLinkApp/SensorLinkApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SensorLinkApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -613,6 +639,9 @@
 		1E95CEB41B7499EE009C547A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "SensorLinkApp WatchKit Extension/SensorLinkApp WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -620,6 +649,7 @@
 				INFOPLIST_FILE = "SensorLinkApp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -627,9 +657,13 @@
 		1E95CEB51B7499EE009C547A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "SensorLinkApp WatchKit Extension/SensorLinkApp WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "SensorLinkApp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -653,6 +687,7 @@
 				1E95CE8A1B749926009C547A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E95CE8B1B749926009C547A /* Build configuration list for PBXNativeTarget "SensorLinkAppTests" */ = {
 			isa = XCConfigurationList;
@@ -661,6 +696,7 @@
 				1E95CE8D1B749926009C547A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E95CEB01B7499EE009C547A /* Build configuration list for PBXNativeTarget "SensorLinkApp WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -669,6 +705,7 @@
 				1E95CEB21B7499EE009C547A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E95CEB31B7499EE009C547A /* Build configuration list for PBXNativeTarget "SensorLinkApp WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -677,6 +714,7 @@
 				1E95CEB51B7499EE009C547A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

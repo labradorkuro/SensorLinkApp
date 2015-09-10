@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -11,11 +11,30 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SensorLinkApp_WatchKit_App" customModuleProvider="target">
                     <items>
                         <label alignment="left" text="計測システム" id="Bbs-Oe-VH7"/>
+                        <label alignment="left" text="計測日付" id="vIz-R7-NAa"/>
                         <label alignment="left" text="計測時間" id="ds6-td-unm"/>
                         <label alignment="left" text="電流値　4.56mA" id="ggj-XX-dvt"/>
                         <label alignment="left" text="温度値　30.00℃" id="cxb-Q5-z40"/>
+                        <button width="1" alignment="left" title="更新" id="Uas-KR-AuH">
+                            <connections>
+                                <action selector="updateView" destination="AgC-eL-Hgc" id="oi5-Dt-ujd"/>
+                            </connections>
+                        </button>
                     </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="vIz-R7-NAa"/>
+                            <exclude reference="Uas-KR-AuH"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="vIz-R7-NAa"/>
+                            <include reference="Uas-KR-AuH"/>
+                        </mask>
+                    </variation>
                     <connections>
+                        <outlet property="measureDate" destination="vIz-R7-NAa" id="lSG-3j-9qO"/>
                         <outlet property="measureTime" destination="ds6-td-unm" id="Mbz-G1-Bhf"/>
                         <outlet property="sensorValue_1" destination="ggj-XX-dvt" id="FyY-iL-x9K"/>
                         <outlet property="sensorValue_2" destination="cxb-Q5-z40" id="F7T-7k-Zet"/>
